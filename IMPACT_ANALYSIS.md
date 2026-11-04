@@ -258,7 +258,6 @@ gh search commits / gh pr list --repo <ORG>/<repo> / gh release list --repo <ORG
 ## 주의 (기존 스킬과의 정합성)
 
 - 이 분석은 **신기능(기존 기능 수정/확장)일 때** 수행한다. 완전 신규 독립 기능이거나 단순 명세 변환이면 생략. 애매하면 수행(커버리지 우선).
-- **코드를 안 보고 영향도를 추론하지 않는다** (날조 금지). gh 조회 또는 봇 출력 복붙이 유일한 코드 영향 근거다.
 - **기존 TC를 수정·삭제하지 않는다.** 추가(append)만 한다.
 - 출력 TC의 형식·컬럼·시리즈·자체검수 규칙은 전부 SKILL.md / HEURISTICS.md / WRITING_RULES.md / EXAMPLES.md를 그대로 따른다.
 - FIGMA_ANALYSIS.md(화면 이해)와 이 파일(코드 영향)은 **둘 다 수행 가능**하다. Figma 입력이면서 신기능이면 화면 분석으로 1차 품질을 올리고, gh 분석으로 영향도를 보강한다.
